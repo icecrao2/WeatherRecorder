@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D009F06229B0D5DC00D6CC1D /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F06129B0D5DC00D6CC1D /* WeatherView.swift */; };
+		D009F06529B0D74800D6CC1D /* GetSeoulWeatherInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F06429B0D74800D6CC1D /* GetSeoulWeatherInfoRepository.swift */; };
+		D009F06729B0D94A00D6CC1D /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F06629B0D94A00D6CC1D /* APIRequest.swift */; };
+		D009F06B29B0D9A500D6CC1D /* ResponseEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F06A29B0D9A500D6CC1D /* ResponseEntityProtocol.swift */; };
+		D009F06F29B0DAB400D6CC1D /* WeatherResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F06E29B0DAB400D6CC1D /* WeatherResponseEntity.swift */; };
+		D009F07629B0DF7400D6CC1D /* GetSeoulWeatherInfoRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F07529B0DF7400D6CC1D /* GetSeoulWeatherInfoRepositoryProtocol.swift */; };
+		D009F07829B0DFBA00D6CC1D /* GetSeoulWeatherInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F07729B0DFBA00D6CC1D /* GetSeoulWeatherInfoUseCase.swift */; };
+		D009F07A29B0E00F00D6CC1D /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F07929B0E00F00D6CC1D /* WeatherViewModel.swift */; };
 		D0A82B92298E5DD000D89D21 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A82B91298E5DD000D89D21 /* LoginViewModel.swift */; };
 		D0C7A21C298E54840031D2D3 /* WeatherRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A21B298E54840031D2D3 /* WeatherRecorderApp.swift */; };
 		D0C7A21E298E54840031D2D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A21D298E54840031D2D3 /* ContentView.swift */; };
@@ -37,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D009F06129B0D5DC00D6CC1D /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		D009F06429B0D74800D6CC1D /* GetSeoulWeatherInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeoulWeatherInfoRepository.swift; sourceTree = "<group>"; };
+		D009F06629B0D94A00D6CC1D /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		D009F06A29B0D9A500D6CC1D /* ResponseEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseEntityProtocol.swift; sourceTree = "<group>"; };
+		D009F06E29B0DAB400D6CC1D /* WeatherResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseEntity.swift; sourceTree = "<group>"; };
+		D009F07529B0DF7400D6CC1D /* GetSeoulWeatherInfoRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeoulWeatherInfoRepositoryProtocol.swift; sourceTree = "<group>"; };
+		D009F07729B0DFBA00D6CC1D /* GetSeoulWeatherInfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeoulWeatherInfoUseCase.swift; sourceTree = "<group>"; };
+		D009F07929B0E00F00D6CC1D /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		D0A82B91298E5DD000D89D21 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D0C7A218298E54840031D2D3 /* WeatherRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7A21B298E54840031D2D3 /* WeatherRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRecorderApp.swift; sourceTree = "<group>"; };
@@ -77,6 +93,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D009F06329B0D72E00D6CC1D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D009F06429B0D74800D6CC1D /* GetSeoulWeatherInfoRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D009F06829B0D98C00D6CC1D /* ResponseEntities */ = {
+			isa = PBXGroup;
+			children = (
+				D009F06929B0D99C00D6CC1D /* Protocol */,
+				D009F06E29B0DAB400D6CC1D /* WeatherResponseEntity.swift */,
+			);
+			path = ResponseEntities;
+			sourceTree = "<group>";
+		};
+		D009F06929B0D99C00D6CC1D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D009F06A29B0D9A500D6CC1D /* ResponseEntityProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D009F06C29B0DAA100D6CC1D /* GetWeather */ = {
+			isa = PBXGroup;
+			children = (
+				D009F06D29B0DAAC00D6CC1D /* Models */,
+			);
+			path = GetWeather;
+			sourceTree = "<group>";
+		};
+		D009F06D29B0DAAC00D6CC1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D009F07229B0DF5500D6CC1D /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				D009F07729B0DFBA00D6CC1D /* GetSeoulWeatherInfoUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		D009F07329B0DF5900D6CC1D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D009F07529B0DF7400D6CC1D /* GetSeoulWeatherInfoRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		D0A82B8F298E5DBD00D89D21 /* Atom */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				D0A82B91298E5DD000D89D21 /* LoginViewModel.swift */,
+				D009F07929B0E00F00D6CC1D /* WeatherViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -165,6 +238,9 @@
 		D0C7A246298E57D00031D2D3 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				D009F07329B0DF5900D6CC1D /* Repository */,
+				D009F07229B0DF5500D6CC1D /* UseCase */,
+				D009F06C29B0DAA100D6CC1D /* GetWeather */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -172,6 +248,9 @@
 		D0C7A247298E57D30031D2D3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D009F06829B0D98C00D6CC1D /* ResponseEntities */,
+				D009F06329B0D72E00D6CC1D /* Repository */,
+				D009F06629B0D94A00D6CC1D /* APIRequest.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -188,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				D0C7A248298E57DB0031D2D3 /* LoginView.swift */,
+				D009F06129B0D5DC00D6CC1D /* WeatherView.swift */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -323,10 +403,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0C7A249298E57DB0031D2D3 /* LoginView.swift in Sources */,
+				D009F07A29B0E00F00D6CC1D /* WeatherViewModel.swift in Sources */,
 				D0C7A24D298E58980031D2D3 /* IconView.swift in Sources */,
 				D0C7A21E298E54840031D2D3 /* ContentView.swift in Sources */,
+				D009F06B29B0D9A500D6CC1D /* ResponseEntityProtocol.swift in Sources */,
+				D009F06F29B0DAB400D6CC1D /* WeatherResponseEntity.swift in Sources */,
+				D009F06229B0D5DC00D6CC1D /* WeatherView.swift in Sources */,
 				D0A82B92298E5DD000D89D21 /* LoginViewModel.swift in Sources */,
+				D009F06529B0D74800D6CC1D /* GetSeoulWeatherInfoRepository.swift in Sources */,
+				D009F07829B0DFBA00D6CC1D /* GetSeoulWeatherInfoUseCase.swift in Sources */,
+				D009F06729B0D94A00D6CC1D /* APIRequest.swift in Sources */,
 				D0C7A21C298E54840031D2D3 /* WeatherRecorderApp.swift in Sources */,
+				D009F07629B0DF7400D6CC1D /* GetSeoulWeatherInfoRepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
