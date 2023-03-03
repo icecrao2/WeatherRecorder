@@ -9,12 +9,19 @@ import Foundation
 import SwiftUI
 
 
-class WeatherViewModel: ObservableObject {
+class SeoulWeatherViewModel: ObservableObject {
 
     
     private let getSeoulWeatherInfoUseCase: GetSeoulWeatherInfoUseCase = GetSeoulWeatherInfoUseCase(GetSeoulWeatherInfoRepository())
     
+    let moodStateList: [String] = ["매우좋음", "좋음", "보통", "나쁨", "매우나쁨"]
+
+    
     @Published var weatherInfo: WeatherResponseEntity?
+    
+    
+    
+    
     
     
     @MainActor
