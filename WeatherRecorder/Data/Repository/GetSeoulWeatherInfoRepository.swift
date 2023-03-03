@@ -14,7 +14,7 @@ class GetSeoulWeatherInfoRepository: GetSeoulWeatherInfoRepositoryProtocol {
     private let apiKey: String = "657b39958d5fb75412f87bc2e8e3848b"
     
     func excute() async -> WeatherResponseEntity? {
-        let url: String = "\(baseURL)?q=Seoul&appid=\(apiKey)"
+        let url: String = "\(baseURL)?q=Seoul&appid=\(apiKey)&units=metric&lang=kr"
         
         guard let response: WeatherResponseEntity = await APIRequest<WeatherResponseEntity>.request(url, "GET") else {
             print("unknown error")

@@ -108,8 +108,26 @@ struct Sys: Codable {
     
     func countryCodeToFullName(code: String?) -> String? {
         guard code != nil else {return nil}
-        let current = Locale(identifier: "en_US")
+        let current = Locale(identifier: "ko_KR")
         let country = current.localizedString(forRegionCode: code!)
         return country
+    }
+    
+    func convertSunriseUTCToLocaleString() -> String {
+        let date = NSDate(timeIntervalSince1970: TimeInterval(sunrise ?? 100)) as Date
+        
+        let dfFormat = DateFormatter()
+        dfFormat.dateFormat = "HH:mm"
+        
+        return dfFormat.string(from: date)
+    }
+    
+    func convertSunsetUTCToLocaleString() -> String {
+        let date = NSDate(timeIntervalSince1970: TimeInterval(sunset ?? 100)) as Date
+        
+        let dfFormat = DateFormatter()
+        dfFormat.dateFormat = "HH:mm"
+        
+        return dfFormat.string(from: date)
     }
 }

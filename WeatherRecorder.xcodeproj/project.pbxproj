@@ -248,8 +248,8 @@
 		D0C7A247298E57D30031D2D3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				D009F06829B0D98C00D6CC1D /* ResponseEntities */,
 				D009F06329B0D72E00D6CC1D /* Repository */,
+				D009F06829B0D98C00D6CC1D /* ResponseEntities */,
 				D009F06629B0D94A00D6CC1D /* APIRequest.swift */,
 			);
 			path = Data;
