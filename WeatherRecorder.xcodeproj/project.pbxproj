@@ -20,6 +20,8 @@
 		D009F08D29B2B49B00D6CC1D /* DesignConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F08C29B2B49B00D6CC1D /* DesignConst.swift */; };
 		D009F09029B2B60200D6CC1D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F08F29B2B60200D6CC1D /* ColorExtension.swift */; };
 		D009F09329B2B8CE00D6CC1D /* SmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F09229B2B8CE00D6CC1D /* SmallButton.swift */; };
+		D0915B7029B4909C00562303 /* WeatherEmotion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0915B6E29B4909C00562303 /* WeatherEmotion.xcdatamodeld */; };
+		D0915B7229B491DE00562303 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B7129B491DE00562303 /* PersistenceController.swift */; };
 		D0A82B92298E5DD000D89D21 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A82B91298E5DD000D89D21 /* LoginViewModel.swift */; };
 		D0C7A21C298E54840031D2D3 /* WeatherRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A21B298E54840031D2D3 /* WeatherRecorderApp.swift */; };
 		D0C7A21E298E54840031D2D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A21D298E54840031D2D3 /* ContentView.swift */; };
@@ -63,6 +65,8 @@
 		D009F08C29B2B49B00D6CC1D /* DesignConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignConst.swift; sourceTree = "<group>"; };
 		D009F08F29B2B60200D6CC1D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		D009F09229B2B8CE00D6CC1D /* SmallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallButton.swift; sourceTree = "<group>"; };
+		D0915B6F29B4909C00562303 /* WeatherEmotion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherEmotion.xcdatamodel; sourceTree = "<group>"; };
+		D0915B7129B491DE00562303 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		D0A82B91298E5DD000D89D21 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D0C7A218298E54840031D2D3 /* WeatherRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7A21B298E54840031D2D3 /* WeatherRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRecorderApp.swift; sourceTree = "<group>"; };
@@ -191,6 +195,22 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		D0915B6D29B48ECD00562303 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D0915B7129B491DE00562303 /* PersistenceController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D0915B7329B495EA00562303 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				D0915B6D29B48ECD00562303 /* CoreData */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 		D0A82B8F298E5DBD00D89D21 /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +253,7 @@
 		D0C7A21A298E54840031D2D3 /* WeatherRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				D0915B7329B495EA00562303 /* Environment */,
 				D009F08E29B2B5F700D6CC1D /* Utils */,
 				D009F08B29B2B49100D6CC1D /* GlobalConst */,
 				D0C7A247298E57D30031D2D3 /* Data */,
@@ -242,6 +263,7 @@
 				D0C7A21D298E54840031D2D3 /* ContentView.swift */,
 				D0C7A21F298E54860031D2D3 /* Assets.xcassets */,
 				D0C7A221298E54860031D2D3 /* Preview Content */,
+				D0915B6E29B4909C00562303 /* WeatherEmotion.xcdatamodeld */,
 			);
 			path = WeatherRecorder;
 			sourceTree = "<group>";
@@ -465,8 +487,10 @@
 				D009F08729B2B11F00D6CC1D /* GetWeatherCase.swift in Sources */,
 				D0C7A21C298E54840031D2D3 /* WeatherRecorderApp.swift in Sources */,
 				D009F08D29B2B49B00D6CC1D /* DesignConst.swift in Sources */,
+				D0915B7029B4909C00562303 /* WeatherEmotion.xcdatamodeld in Sources */,
 				D009F08A29B2B3EC00D6CC1D /* SectorCard.swift in Sources */,
 				D009F07629B0DF7400D6CC1D /* GetWeatherInfoRepositoryProtocol.swift in Sources */,
+				D0915B7229B491DE00562303 /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,6 +815,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D0915B6E29B4909C00562303 /* WeatherEmotion.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D0915B6F29B4909C00562303 /* WeatherEmotion.xcdatamodel */,
+			);
+			currentVersion = D0915B6F29B4909C00562303 /* WeatherEmotion.xcdatamodel */;
+			path = WeatherEmotion.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D0C7A210298E54840031D2D3 /* Project object */;
 }
