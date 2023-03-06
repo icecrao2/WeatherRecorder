@@ -6,9 +6,6 @@
 <p> 현재 날씨를 확인하고, 그날 그날의 기분들을 간단하게 기록하는 앱 </br>
 </p>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/29699217/204727572-9a459923-e5e4-472b-89ab-4f25142925ab.png" width=30%>
-
 ## 📚 Stack & Libraries
 - IDE : XCode
 - Minimum iOS 16.0 version
