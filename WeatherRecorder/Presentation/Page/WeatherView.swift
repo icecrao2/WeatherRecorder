@@ -16,7 +16,7 @@ struct WeatherView: View {
     
     
     var body: some View {
-        VStack {
+        ScrollView {
             VStack {
                 Text("\(viewModel.weatherInfo?.name ?? "-")")
                     .font(Font.system(size: 50))
@@ -106,11 +106,17 @@ struct WeatherView: View {
                 }
             }
             .padding(.horizontal)
+            .padding(.top)
         }
         .task {
             await viewModel.setSeoulWeatherInfo()
-            viewModel.readEmotion()
         }
+        .background(
+            Image("ClearSky")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+        )
     }
 }
 

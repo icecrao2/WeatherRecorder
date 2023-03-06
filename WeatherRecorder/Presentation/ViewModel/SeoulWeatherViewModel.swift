@@ -22,7 +22,7 @@ class SeoulWeatherViewModel: ObservableObject {
     @Published var weatherInfo: WeatherResponseEntity?
     
     func addEmotion(emotion: String) {
-        addEmotionUseCase.addEmotion(model: weatherInfo!.translateToModel(emotion: currentEmotion))
+        addEmotionUseCase.addEmotion(model: weatherInfo!.translateToModel(emotion: emotion))
     }
     
     func deleteEmotion(at index: IndexSet) {
