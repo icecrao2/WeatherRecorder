@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let persistenceController = PersistenceController.shared
+    
     var body: some View {
         
         VStack{
-            
-            LoginView()
-            
+            WeatherView()
         }
+        .environment(\.managedObjectContext, persistenceController.container.viewContext)
         
     }
 }

@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D009F06229B0D5DC00D6CC1D /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F06129B0D5DC00D6CC1D /* WeatherView.swift */; };
+		D009F06529B0D74800D6CC1D /* GetWeatherInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F06429B0D74800D6CC1D /* GetWeatherInfoRepository.swift */; };
+		D009F06729B0D94A00D6CC1D /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F06629B0D94A00D6CC1D /* APIRequest.swift */; };
+		D009F06B29B0D9A500D6CC1D /* ResponseEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F06A29B0D9A500D6CC1D /* ResponseEntityProtocol.swift */; };
+		D009F06F29B0DAB400D6CC1D /* WeatherResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F06E29B0DAB400D6CC1D /* WeatherResponseEntity.swift */; };
+		D009F07629B0DF7400D6CC1D /* GetWeatherInfoRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F07529B0DF7400D6CC1D /* GetWeatherInfoRepositoryProtocol.swift */; };
+		D009F07829B0DFBA00D6CC1D /* GetWeatherInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F07729B0DFBA00D6CC1D /* GetWeatherInfoUseCase.swift */; };
+		D009F07A29B0E00F00D6CC1D /* SeoulWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F07929B0E00F00D6CC1D /* SeoulWeatherViewModel.swift */; };
+		D009F08729B2B11F00D6CC1D /* GetWeatherCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F08629B2B11F00D6CC1D /* GetWeatherCase.swift */; };
+		D009F08A29B2B3EC00D6CC1D /* SectorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F08929B2B3EC00D6CC1D /* SectorCard.swift */; };
+		D009F08D29B2B49B00D6CC1D /* DesignConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F08C29B2B49B00D6CC1D /* DesignConst.swift */; };
+		D009F09029B2B60200D6CC1D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F08F29B2B60200D6CC1D /* ColorExtension.swift */; };
+		D009F09329B2B8CE00D6CC1D /* SmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F09229B2B8CE00D6CC1D /* SmallButton.swift */; };
+		D0915B7029B4909C00562303 /* WeatherEmotion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0915B6E29B4909C00562303 /* WeatherEmotion.xcdatamodeld */; };
+		D0915B7229B491DE00562303 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B7129B491DE00562303 /* PersistenceController.swift */; };
+		D0915B7E29B60FFF00562303 /* AddEmotionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B7D29B60FFF00562303 /* AddEmotionRepository.swift */; };
+		D0915B8029B6107100562303 /* AddEmotionRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B7F29B6107100562303 /* AddEmotionRepositoryProtocol.swift */; };
+		D0915B8229B6109700562303 /* AddEmotionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B8129B6109700562303 /* AddEmotionUseCase.swift */; };
+		D0915B8429B6118200562303 /* WeatherEmotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B8329B6118200562303 /* WeatherEmotionModel.swift */; };
+		D0915B8629B6135100562303 /* DeleteEmotionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B8529B6135100562303 /* DeleteEmotionRepository.swift */; };
+		D0915B8829B614A100562303 /* DeleteEmotionRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B8729B614A100562303 /* DeleteEmotionRepositoryProtocol.swift */; };
+		D0915B8A29B614D500562303 /* DeleteEmotionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B8929B614D500562303 /* DeleteEmotionUseCase.swift */; };
+		D0915B8C29B615BE00562303 /* ReadEmotionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B8B29B615BE00562303 /* ReadEmotionRepository.swift */; };
+		D0915B8F29B616EF00562303 /* ReadEmotionRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B8E29B616EF00562303 /* ReadEmotionRepositoryProtocol.swift */; };
+		D0915B9129B6170D00562303 /* ReadEmotionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B9029B6170D00562303 /* ReadEmotionUseCase.swift */; };
+		D0915B9429B61B6000562303 /* ClearSky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0915B9329B61B6000562303 /* ClearSky.jpg */; };
+		D0915B9B29B6213500562303 /* Rainy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0915B9A29B6213500562303 /* Rainy.jpg */; };
 		D0A82B92298E5DD000D89D21 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A82B91298E5DD000D89D21 /* LoginViewModel.swift */; };
 		D0C7A21C298E54840031D2D3 /* WeatherRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A21B298E54840031D2D3 /* WeatherRecorderApp.swift */; };
 		D0C7A21E298E54840031D2D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A21D298E54840031D2D3 /* ContentView.swift */; };
@@ -37,6 +64,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D009F06129B0D5DC00D6CC1D /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		D009F06429B0D74800D6CC1D /* GetWeatherInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherInfoRepository.swift; sourceTree = "<group>"; };
+		D009F06629B0D94A00D6CC1D /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		D009F06A29B0D9A500D6CC1D /* ResponseEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseEntityProtocol.swift; sourceTree = "<group>"; };
+		D009F06E29B0DAB400D6CC1D /* WeatherResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseEntity.swift; sourceTree = "<group>"; };
+		D009F07529B0DF7400D6CC1D /* GetWeatherInfoRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherInfoRepositoryProtocol.swift; sourceTree = "<group>"; };
+		D009F07729B0DFBA00D6CC1D /* GetWeatherInfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherInfoUseCase.swift; sourceTree = "<group>"; };
+		D009F07929B0E00F00D6CC1D /* SeoulWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeoulWeatherViewModel.swift; sourceTree = "<group>"; };
+		D009F08629B2B11F00D6CC1D /* GetWeatherCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherCase.swift; sourceTree = "<group>"; };
+		D009F08929B2B3EC00D6CC1D /* SectorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorCard.swift; sourceTree = "<group>"; };
+		D009F08C29B2B49B00D6CC1D /* DesignConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignConst.swift; sourceTree = "<group>"; };
+		D009F08F29B2B60200D6CC1D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		D009F09229B2B8CE00D6CC1D /* SmallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallButton.swift; sourceTree = "<group>"; };
+		D0915B6F29B4909C00562303 /* WeatherEmotion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherEmotion.xcdatamodel; sourceTree = "<group>"; };
+		D0915B7129B491DE00562303 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		D0915B7D29B60FFF00562303 /* AddEmotionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmotionRepository.swift; sourceTree = "<group>"; };
+		D0915B7F29B6107100562303 /* AddEmotionRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmotionRepositoryProtocol.swift; sourceTree = "<group>"; };
+		D0915B8129B6109700562303 /* AddEmotionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmotionUseCase.swift; sourceTree = "<group>"; };
+		D0915B8329B6118200562303 /* WeatherEmotionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEmotionModel.swift; sourceTree = "<group>"; };
+		D0915B8529B6135100562303 /* DeleteEmotionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteEmotionRepository.swift; sourceTree = "<group>"; };
+		D0915B8729B614A100562303 /* DeleteEmotionRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteEmotionRepositoryProtocol.swift; sourceTree = "<group>"; };
+		D0915B8929B614D500562303 /* DeleteEmotionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteEmotionUseCase.swift; sourceTree = "<group>"; };
+		D0915B8B29B615BE00562303 /* ReadEmotionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadEmotionRepository.swift; sourceTree = "<group>"; };
+		D0915B8E29B616EF00562303 /* ReadEmotionRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadEmotionRepositoryProtocol.swift; sourceTree = "<group>"; };
+		D0915B9029B6170D00562303 /* ReadEmotionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadEmotionUseCase.swift; sourceTree = "<group>"; };
+		D0915B9329B61B6000562303 /* ClearSky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ClearSky.jpg; sourceTree = "<group>"; };
+		D0915B9A29B6213500562303 /* Rainy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rainy.jpg; sourceTree = "<group>"; };
 		D0A82B91298E5DD000D89D21 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D0C7A218298E54840031D2D3 /* WeatherRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7A21B298E54840031D2D3 /* WeatherRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRecorderApp.swift; sourceTree = "<group>"; };
@@ -77,18 +131,159 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D0A82B8F298E5DBD00D89D21 /* Atom */ = {
+		D009F06329B0D72E00D6CC1D /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				D009F06429B0D74800D6CC1D /* GetWeatherInfoRepository.swift */,
+				D0915B7D29B60FFF00562303 /* AddEmotionRepository.swift */,
+				D0915B8529B6135100562303 /* DeleteEmotionRepository.swift */,
+				D0915B8B29B615BE00562303 /* ReadEmotionRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D009F06829B0D98C00D6CC1D /* ResponseEntities */ = {
+			isa = PBXGroup;
+			children = (
+				D009F06929B0D99C00D6CC1D /* Protocol */,
+				D009F06E29B0DAB400D6CC1D /* WeatherResponseEntity.swift */,
+			);
+			path = ResponseEntities;
+			sourceTree = "<group>";
+		};
+		D009F06929B0D99C00D6CC1D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D009F06A29B0D9A500D6CC1D /* ResponseEntityProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D009F06D29B0DAAC00D6CC1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0915B8329B6118200562303 /* WeatherEmotionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D009F07229B0DF5500D6CC1D /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				D009F07729B0DFBA00D6CC1D /* GetWeatherInfoUseCase.swift */,
+				D0915B8129B6109700562303 /* AddEmotionUseCase.swift */,
+				D0915B8929B614D500562303 /* DeleteEmotionUseCase.swift */,
+				D0915B9029B6170D00562303 /* ReadEmotionUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		D009F07329B0DF5900D6CC1D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D009F07529B0DF7400D6CC1D /* GetWeatherInfoRepositoryProtocol.swift */,
+				D0915B7F29B6107100562303 /* AddEmotionRepositoryProtocol.swift */,
+				D0915B8729B614A100562303 /* DeleteEmotionRepositoryProtocol.swift */,
+				D0915B8E29B616EF00562303 /* ReadEmotionRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D009F08529B2B10700D6CC1D /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				D009F08629B2B11F00D6CC1D /* GetWeatherCase.swift */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
+		D009F08829B2B3CE00D6CC1D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				D009F08929B2B3EC00D6CC1D /* SectorCard.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		D009F08B29B2B49100D6CC1D /* GlobalConst */ = {
+			isa = PBXGroup;
+			children = (
+				D009F08C29B2B49B00D6CC1D /* DesignConst.swift */,
+			);
+			path = GlobalConst;
+			sourceTree = "<group>";
+		};
+		D009F08E29B2B5F700D6CC1D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D009F08F29B2B60200D6CC1D /* ColorExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D009F09129B2B8BB00D6CC1D /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D009F09229B2B8CE00D6CC1D /* SmallButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		D0915B6D29B48ECD00562303 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D0915B7129B491DE00562303 /* PersistenceController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D0915B7329B495EA00562303 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				D0915B6D29B48ECD00562303 /* CoreData */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		D0915B8D29B615CA00562303 /* RequestEntities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestEntities;
+			sourceTree = "<group>";
+		};
+		D0915B9229B61B4800562303 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D0915B9529B61B6600562303 /* BG */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		D0915B9529B61B6600562303 /* BG */ = {
+			isa = PBXGroup;
+			children = (
+				D0915B9329B61B6000562303 /* ClearSky.jpg */,
+				D0915B9A29B6213500562303 /* Rainy.jpg */,
+			);
+			path = BG;
+			sourceTree = "<group>";
+		};
+		D0A82B8F298E5DBD00D89D21 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				D009F09129B2B8BB00D6CC1D /* Buttons */,
+				D009F08829B2B3CE00D6CC1D /* Cards */,
 				D0C7A24C298E58980031D2D3 /* IconView.swift */,
 			);
-			path = Atom;
+			path = Atoms;
 			sourceTree = "<group>";
 		};
 		D0A82B90298E5DC400D89D21 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				D0A82B91298E5DD000D89D21 /* LoginViewModel.swift */,
+				D009F07929B0E00F00D6CC1D /* SeoulWeatherViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -116,6 +311,10 @@
 		D0C7A21A298E54840031D2D3 /* WeatherRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				D0915B9229B61B4800562303 /* Assets */,
+				D0915B7329B495EA00562303 /* Environment */,
+				D009F08E29B2B5F700D6CC1D /* Utils */,
+				D009F08B29B2B49100D6CC1D /* GlobalConst */,
 				D0C7A247298E57D30031D2D3 /* Data */,
 				D0C7A246298E57D00031D2D3 /* Domain */,
 				D0C7A245298E57CB0031D2D3 /* Presentation */,
@@ -123,6 +322,7 @@
 				D0C7A21D298E54840031D2D3 /* ContentView.swift */,
 				D0C7A21F298E54860031D2D3 /* Assets.xcassets */,
 				D0C7A221298E54860031D2D3 /* Preview Content */,
+				D0915B6E29B4909C00562303 /* WeatherEmotion.xcdatamodeld */,
 			);
 			path = WeatherRecorder;
 			sourceTree = "<group>";
@@ -165,6 +365,10 @@
 		D0C7A246298E57D00031D2D3 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				D009F08529B2B10700D6CC1D /* Cases */,
+				D009F06D29B0DAAC00D6CC1D /* Models */,
+				D009F07329B0DF5900D6CC1D /* Repository */,
+				D009F07229B0DF5500D6CC1D /* UseCase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -172,6 +376,10 @@
 		D0C7A247298E57D30031D2D3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D009F06329B0D72E00D6CC1D /* Repository */,
+				D0915B8D29B615CA00562303 /* RequestEntities */,
+				D009F06829B0D98C00D6CC1D /* ResponseEntities */,
+				D009F06629B0D94A00D6CC1D /* APIRequest.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -179,7 +387,7 @@
 		D0C7A24A298E58820031D2D3 /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
-				D0A82B8F298E5DBD00D89D21 /* Atom */,
+				D0A82B8F298E5DBD00D89D21 /* Atoms */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -188,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				D0C7A248298E57DB0031D2D3 /* LoginView.swift */,
+				D009F06129B0D5DC00D6CC1D /* WeatherView.swift */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -297,6 +506,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0C7A223298E54860031D2D3 /* Preview Assets.xcassets in Resources */,
+				D0915B9B29B6213500562303 /* Rainy.jpg in Resources */,
+				D0915B9429B61B6000562303 /* ClearSky.jpg in Resources */,
 				D0C7A220298E54860031D2D3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,10 +534,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0C7A249298E57DB0031D2D3 /* LoginView.swift in Sources */,
+				D009F07A29B0E00F00D6CC1D /* SeoulWeatherViewModel.swift in Sources */,
+				D0915B8429B6118200562303 /* WeatherEmotionModel.swift in Sources */,
 				D0C7A24D298E58980031D2D3 /* IconView.swift in Sources */,
+				D009F09329B2B8CE00D6CC1D /* SmallButton.swift in Sources */,
 				D0C7A21E298E54840031D2D3 /* ContentView.swift in Sources */,
+				D009F06B29B0D9A500D6CC1D /* ResponseEntityProtocol.swift in Sources */,
+				D0915B9129B6170D00562303 /* ReadEmotionUseCase.swift in Sources */,
+				D009F06F29B0DAB400D6CC1D /* WeatherResponseEntity.swift in Sources */,
+				D0915B8A29B614D500562303 /* DeleteEmotionUseCase.swift in Sources */,
+				D009F09029B2B60200D6CC1D /* ColorExtension.swift in Sources */,
+				D0915B8629B6135100562303 /* DeleteEmotionRepository.swift in Sources */,
+				D0915B7E29B60FFF00562303 /* AddEmotionRepository.swift in Sources */,
+				D009F06229B0D5DC00D6CC1D /* WeatherView.swift in Sources */,
+				D0915B8C29B615BE00562303 /* ReadEmotionRepository.swift in Sources */,
+				D0915B8829B614A100562303 /* DeleteEmotionRepositoryProtocol.swift in Sources */,
 				D0A82B92298E5DD000D89D21 /* LoginViewModel.swift in Sources */,
+				D009F06529B0D74800D6CC1D /* GetWeatherInfoRepository.swift in Sources */,
+				D0915B8229B6109700562303 /* AddEmotionUseCase.swift in Sources */,
+				D009F07829B0DFBA00D6CC1D /* GetWeatherInfoUseCase.swift in Sources */,
+				D009F06729B0D94A00D6CC1D /* APIRequest.swift in Sources */,
+				D009F08729B2B11F00D6CC1D /* GetWeatherCase.swift in Sources */,
 				D0C7A21C298E54840031D2D3 /* WeatherRecorderApp.swift in Sources */,
+				D009F08D29B2B49B00D6CC1D /* DesignConst.swift in Sources */,
+				D0915B8F29B616EF00562303 /* ReadEmotionRepositoryProtocol.swift in Sources */,
+				D0915B7029B4909C00562303 /* WeatherEmotion.xcdatamodeld in Sources */,
+				D009F08A29B2B3EC00D6CC1D /* SectorCard.swift in Sources */,
+				D009F07629B0DF7400D6CC1D /* GetWeatherInfoRepositoryProtocol.swift in Sources */,
+				D0915B7229B491DE00562303 /* PersistenceController.swift in Sources */,
+				D0915B8029B6107100562303 /* AddEmotionRepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,6 +887,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D0915B6E29B4909C00562303 /* WeatherEmotion.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D0915B6F29B4909C00562303 /* WeatherEmotion.xcdatamodel */,
+			);
+			currentVersion = D0915B6F29B4909C00562303 /* WeatherEmotion.xcdatamodel */;
+			path = WeatherEmotion.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D0C7A210298E54840031D2D3 /* Project object */;
 }
