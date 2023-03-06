@@ -58,7 +58,7 @@ struct WeatherView: View {
                     
                     ForEach(viewModel.moodStateList, id: \.self) { str in
                         Button {
-                            print(str)
+                            viewModel.addEmotion(emotion: str)
                         } label: {
                             Text(str)
                                 .modifier(SmallButtonModifier())
@@ -109,6 +109,7 @@ struct WeatherView: View {
         }
         .task {
             await viewModel.setSeoulWeatherInfo()
+            viewModel.readEmotion()
         }
     }
 }

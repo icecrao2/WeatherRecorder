@@ -25,6 +25,20 @@ struct WeatherResponseEntity: ResponseEntityProtocol, Identifiable {
     var dt: Int?
     var sys: Sys?
     var timezone: Int?
+    
+    
+    
+    func translateToModel(emotion: String) -> WeatherEmotionModel{
+        return WeatherEmotionModel(
+            cloud: clouds?.percentage ?? 0,
+            emotion: emotion,
+            feelTemp: Int(main?.feels_like ?? 0.0),
+            rainy: Int(rain?.lastHour ?? 0.0),
+            snow: Int(snow?.lastHour ?? 0.0),
+            wind: Int(wind?.speed ?? 0.0),
+            date: Date()
+        )
+    }
 }
 
 struct Coordinates: Codable {
