@@ -10,6 +10,7 @@ import SwiftUI
 
 struct DesignConst {
     
+    static let backgroundImages: Dictionary<String, String> = ["Rainy":"Rainy", "Clear":"Clear"]
     
     struct Colors {
         static let lightBlueColor: Color = Color(hex: "#5DBCCE")

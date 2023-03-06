@@ -9,10 +9,7 @@ import SwiftUI
 
 struct WeatherView: View {
     
-    @Environment(\.managedObjectContext) var managedObjectContext
-    
     @StateObject private var viewModel: SeoulWeatherViewModel = SeoulWeatherViewModel()
-    
     
     
     var body: some View {
@@ -21,39 +18,47 @@ struct WeatherView: View {
                 Text("\(viewModel.weatherInfo?.name ?? "-")")
                     .font(Font.system(size: 50))
                     .fontWeight(Font.Weight.medium)
+                    .foregroundColor(.white)
                 
                 Text("\(String(format: "%.0f", viewModel.weatherInfo?.main?.temp ?? 0.0))º")
                     .font(Font.system(size: 50))
                     .fontWeight(Font.Weight.medium)
+                    .foregroundColor(.white)
                 
                 Text("\((viewModel.weatherInfo?.weather?[0].description) ?? "-")")
                     .font(Font.system(size: 25))
                     .fontWeight(Font.Weight.light)
+                    .foregroundColor(.white)
                 
                 
                 HStack {
                     Text("최고 : \(String(format: "%.0f", viewModel.weatherInfo?.main?.temp_max ?? 0.0))º")
                         .font(Font.system(size: 25))
                         .fontWeight(Font.Weight.light)
+                        .foregroundColor(.white)
                     
                     
                     Text("최저 : \(String(format: "%.0f", viewModel.weatherInfo?.main?.temp_min ?? 0.0))º")
                         .font(Font.system(size: 25))
                         .fontWeight(Font.Weight.light)
+                        .foregroundColor(.white)
                 }
                 
                 HStack {
                     Text("일출 : \(String(viewModel.weatherInfo?.sys?.convertSunriseUTCToLocaleString() ?? "-"))")
                         .font(Font.system(size: 25))
                         .fontWeight(Font.Weight.light)
+                        .foregroundColor(.white)
                     
                     Text("일몰 : \(String(viewModel.weatherInfo?.sys?.convertSunsetUTCToLocaleString() ?? "-"))")
                         .font(Font.system(size: 25))
                         .fontWeight(Font.Weight.light)
+                        .foregroundColor(.white)
                 }
                 
                 
                 Text("오늘 기분 상태")
+                    .foregroundColor(.white)
                 HStack(spacing: 10) {
                     
                     ForEach(viewModel.moodStateList, id: \.self) { str in
@@ -110,9 +115,10 @@ struct WeatherView: View {
         }
         .task {
             await viewModel.setSeoulWeatherInfo()
+            viewModel.setBackgroundImage()
         }
         .background(
-            Image("ClearSky")
+            Image(viewModel.backgroundImage)
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()

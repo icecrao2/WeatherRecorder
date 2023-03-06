@@ -18,8 +18,11 @@ class SeoulWeatherViewModel: ObservableObject {
     private let deleteEmotionUseCase: DeleteEmotionUseCase = DeleteEmotionUseCase(DeleteEmotionRepository())
     
     let moodStateList: [String] = ["매우좋음", "좋음", "보통", "나쁨", "매우나쁨"]
-
+    private let backgroundImageList: Dictionary<String, String> = DesignConst.backgroundImages
+    
     @Published var weatherInfo: WeatherResponseEntity?
+    @Published var backgroundImage: String = ""
+    
     
     func addEmotion(emotion: String) {
         addEmotionUseCase.addEmotion(model: weatherInfo!.translateToModel(emotion: emotion))
@@ -32,8 +35,16 @@ class SeoulWeatherViewModel: ObservableObject {
     
     @MainActor
     func setSeoulWeatherInfo() async {
-        
         weatherInfo = await getSeoulWeatherInfoUseCase.excute()
+    }
+    
+    func setBackgroundImage() {
+        
+        if weatherInfo?.rain?.lastHour != nil && weatherInfo!.rain!.lastHour! > 0 {
+            backgroundImage = backgroundImageList["Rainy"] ?? ""
+        } else {
+            backgroundImage = backgroundImageList["Clear"] ?? ""
+        }
     }
     
 }

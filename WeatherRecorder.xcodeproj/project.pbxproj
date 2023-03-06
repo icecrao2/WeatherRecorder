@@ -33,6 +33,7 @@
 		D0915B8F29B616EF00562303 /* ReadEmotionRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B8E29B616EF00562303 /* ReadEmotionRepositoryProtocol.swift */; };
 		D0915B9129B6170D00562303 /* ReadEmotionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B9029B6170D00562303 /* ReadEmotionUseCase.swift */; };
 		D0915B9429B61B6000562303 /* ClearSky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0915B9329B61B6000562303 /* ClearSky.jpg */; };
+		D0915B9B29B6213500562303 /* Rainy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0915B9A29B6213500562303 /* Rainy.jpg */; };
 		D0A82B92298E5DD000D89D21 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A82B91298E5DD000D89D21 /* LoginViewModel.swift */; };
 		D0C7A21C298E54840031D2D3 /* WeatherRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A21B298E54840031D2D3 /* WeatherRecorderApp.swift */; };
 		D0C7A21E298E54840031D2D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A21D298E54840031D2D3 /* ContentView.swift */; };
@@ -89,6 +90,7 @@
 		D0915B8E29B616EF00562303 /* ReadEmotionRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadEmotionRepositoryProtocol.swift; sourceTree = "<group>"; };
 		D0915B9029B6170D00562303 /* ReadEmotionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadEmotionUseCase.swift; sourceTree = "<group>"; };
 		D0915B9329B61B6000562303 /* ClearSky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ClearSky.jpg; sourceTree = "<group>"; };
+		D0915B9A29B6213500562303 /* Rainy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rainy.jpg; sourceTree = "<group>"; };
 		D0A82B91298E5DD000D89D21 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D0C7A218298E54840031D2D3 /* WeatherRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7A21B298E54840031D2D3 /* WeatherRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRecorderApp.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				D0915B9329B61B6000562303 /* ClearSky.jpg */,
+				D0915B9A29B6213500562303 /* Rainy.jpg */,
 			);
 			path = BG;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0C7A223298E54860031D2D3 /* Preview Assets.xcassets in Resources */,
+				D0915B9B29B6213500562303 /* Rainy.jpg in Resources */,
 				D0915B9429B61B6000562303 /* ClearSky.jpg in Resources */,
 				D0C7A220298E54860031D2D3 /* Assets.xcassets in Resources */,
 			);
