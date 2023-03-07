@@ -20,6 +20,7 @@
 		D009F08D29B2B49B00D6CC1D /* DesignConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F08C29B2B49B00D6CC1D /* DesignConst.swift */; };
 		D009F09029B2B60200D6CC1D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F08F29B2B60200D6CC1D /* ColorExtension.swift */; };
 		D009F09329B2B8CE00D6CC1D /* SmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009F09229B2B8CE00D6CC1D /* SmallButton.swift */; };
+		D036933E29B75E2400E68EB6 /* WeatherEmotionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036933D29B75E2400E68EB6 /* WeatherEmotionListView.swift */; };
 		D0915B7029B4909C00562303 /* WeatherEmotion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0915B6E29B4909C00562303 /* WeatherEmotion.xcdatamodeld */; };
 		D0915B7229B491DE00562303 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B7129B491DE00562303 /* PersistenceController.swift */; };
 		D0915B7E29B60FFF00562303 /* AddEmotionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0915B7D29B60FFF00562303 /* AddEmotionRepository.swift */; };
@@ -77,6 +78,7 @@
 		D009F08C29B2B49B00D6CC1D /* DesignConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignConst.swift; sourceTree = "<group>"; };
 		D009F08F29B2B60200D6CC1D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		D009F09229B2B8CE00D6CC1D /* SmallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallButton.swift; sourceTree = "<group>"; };
+		D036933D29B75E2400E68EB6 /* WeatherEmotionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEmotionListView.swift; sourceTree = "<group>"; };
 		D0915B6F29B4909C00562303 /* WeatherEmotion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherEmotion.xcdatamodel; sourceTree = "<group>"; };
 		D0915B7129B491DE00562303 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		D0915B7D29B60FFF00562303 /* AddEmotionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmotionRepository.swift; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 			children = (
 				D0C7A248298E57DB0031D2D3 /* LoginView.swift */,
 				D009F06129B0D5DC00D6CC1D /* WeatherView.swift */,
+				D036933D29B75E2400E68EB6 /* WeatherEmotionListView.swift */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -548,6 +551,7 @@
 				D0915B7E29B60FFF00562303 /* AddEmotionRepository.swift in Sources */,
 				D009F06229B0D5DC00D6CC1D /* WeatherView.swift in Sources */,
 				D0915B8C29B615BE00562303 /* ReadEmotionRepository.swift in Sources */,
+				D036933E29B75E2400E68EB6 /* WeatherEmotionListView.swift in Sources */,
 				D0915B8829B614A100562303 /* DeleteEmotionRepositoryProtocol.swift in Sources */,
 				D0A82B92298E5DD000D89D21 /* LoginViewModel.swift in Sources */,
 				D009F06529B0D74800D6CC1D /* GetWeatherInfoRepository.swift in Sources */,

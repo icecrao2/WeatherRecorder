@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct WeatherEmotionModel {
+struct WeatherEmotionModel: Hashable {
     let cloud: Int
     var emotion: String
     let feelTemp: Int

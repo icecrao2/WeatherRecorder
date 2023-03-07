@@ -28,7 +28,10 @@ struct SectorCard<Content>: View where Content: View{
             RoundedRectangle(cornerRadius: cardRadius)
                 .stroke(cardStrokeColor)
         )
-        .background(cardBackgroundColor)
+        .background(
+            RoundedRectangle(cornerRadius: cardRadius)
+                .fill(cardBackgroundColor)
+        )
         
     }
 }

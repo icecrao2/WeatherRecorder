@@ -57,7 +57,7 @@ struct WeatherView: View {
                 }
                 
                 
-                Text("오늘 기분 상태")
+                Text("오늘 기분 상태 : \(viewModel.getTodayRecordedEmotion() ?? "--")")
                     .foregroundColor(.white)
                 HStack(spacing: 10) {
                     
@@ -66,21 +66,25 @@ struct WeatherView: View {
                             viewModel.addEmotion(emotion: str)
                         } label: {
                             Text(str)
-                                .modifier(SmallButtonModifier())
+                                .modifier(SmallButtonModifier(disabled: viewModel.alreadyRecordEmotion))
                         }
+                        .disabled(viewModel.alreadyRecordEmotion)
                     }
-                    
                 }
                 
                 HStack{
                     SectorCard {
                         Text("습도")
-                        Text("\(String(format: "%.0f", viewModel.weatherInfo?.main?.humidity ?? 0))")
+                            .foregroundColor(.white)
+                        Text("\(String(format: "%.0f", viewModel.weatherInfo?.main?.humidity ?? 0))%")
+                            .foregroundColor(.white)
                     }
                     
                     SectorCard {
                         Text("체감온도")
+                            .foregroundColor(.white)
                         Text("\(String(format: "%.0fº", viewModel.weatherInfo?.main?.feels_like ?? 0))")
+                            .foregroundColor(.white)
                     }
                 }
                 
@@ -88,25 +92,35 @@ struct WeatherView: View {
                 HStack {
                     SectorCard {
                         Text("가시거리")
+                            .foregroundColor(.white)
                         Text("\(viewModel.weatherInfo?.visibility ?? 0)")
+                            .foregroundColor(.white)
                     }
                     
                     SectorCard {
                         Text("바람")
+                            .foregroundColor(.white)
                         Text("\(String(format: "%.2f", viewModel.weatherInfo?.wind?.speed ?? 0)) m/s")
+                            .foregroundColor(.white)
                         Text("\(String(format: "%.0f", viewModel.weatherInfo?.wind?.deg ?? 0)) deg")
+                            .foregroundColor(.white)
                     }
                 }
                 
                 HStack {
                     SectorCard {
                         Text("기압")
-                        Text("\(String(format: "%.0f",  viewModel.weatherInfo?.main?.pressure ?? 0))")
+                            .foregroundColor(.white)
+                        Text("\(String(format: "%.0f",  viewModel.weatherInfo?.main?.pressure ?? 0))hPa")
+                            .foregroundColor(.white)
                     }
                     SectorCard {
                         Text("강수량")
+                            .foregroundColor(.white)
                         Text("\(String(format: "%.2f", viewModel.weatherInfo?.rain?.lastHour ?? 0)) mm")
+                            .foregroundColor(.white)
                         Text("지난 1시간")
+                            .foregroundColor(.white)
                     }
                 }
             }
@@ -116,6 +130,7 @@ struct WeatherView: View {
         .task {
             await viewModel.setSeoulWeatherInfo()
             viewModel.setBackgroundImage()
+            viewModel.setAlreadyRecordEmotion()
         }
         .background(
             Image(viewModel.backgroundImage)
