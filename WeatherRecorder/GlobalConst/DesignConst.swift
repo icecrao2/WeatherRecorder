@@ -25,7 +25,7 @@ struct DesignConst {
         static let cardHeight: CGFloat = 40
         static let cardRadius: CGFloat = 10
         static let cardStrokeColor: Color = Color(hex: "#DFE6EE")
-        static let cardBackgroundColor: Color = .clear
+        static let cardBackgroundColor: Color = Color(hex: "#0180BE").opacity(0.5)
     }
     
     struct Button {
